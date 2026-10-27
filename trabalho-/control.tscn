@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://w84uqe2vxgbi"]
+
+[ext_resource type="Texture2D" uid="uid://dea6ae2r1bj1o" path="res://sprit/705ab0974ced3b3ea81f0584f5d5a50f.jpg" id="1_62e2m"]
+[ext_resource type="FontFile" uid="uid://dp6dhsfoy0sfi" path="res://sprit/bremlin/Bremlin.otf" id="2_qtu10"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gcl66"]
+texture = ExtResource("1_62e2m")
+
+[node name="Control" type="Control" unique_id=1227581738]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fundo" type="Panel" parent="." unique_id=528399879]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 646.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gcl66")
+
+[node name="Titulo" type="Label" parent="." unique_id=714472268]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -257.5
+offset_top = -57.5
+offset_right = 257.5
+offset_bottom = 57.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qtu10")
+theme_override_font_sizes/font_size = 100
+text = "Snakerun"
+
+[node name="botoes" type="VBoxContainer" parent="." unique_id=313218741]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Jogar" type="Button" parent="botoes" unique_id=1528467318]
+layout_mode = 2
+
+[node name="Sair" type="Button" parent="botoes" unique_id=1177866843]
+layout_mode = 2
+
+[node name="creditos" type="Button" parent="botoes" unique_id=1626890804]
+layout_mode = 2
